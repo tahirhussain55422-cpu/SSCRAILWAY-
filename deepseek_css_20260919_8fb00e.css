@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  background: #1e3a8a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #facc15;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background: #facc15;
+  color: #1e3a8a;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* COURSES */
+.courses {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.courses h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.course-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.course-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* PRODUCT SECTION */
+.product-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+.product-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.product-image img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.product-details {
+  flex: 1;
+  min-width: 280px;
+}
+
+.badge {
+  background: #facc15;
+  color: #1e3a8a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.product-details h2 {
+  color: #1e3a8a;
+  margin: 15px 0 10px;
+  font-size: 1.8rem;
+}
+
+.product-desc {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.features li {
+  padding: 5px 0;
+  color: #333;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.offer {
+  background: #ef4444;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.buy-btn {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.buy-btn:hover {
+  background: #3b82f6;
+  transform: scale(1.02);
+}
+
+.secure-note {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact {
+  background: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background: #1e3a8a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #3b82f6;
+}
+
+/* FOOTER */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* PAYMENT MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal-content h3 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+.pay-desc {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.qr-box img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.qr-note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 5px;
+}
+
+.upi-id-box {
+  margin: 20px 0;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.upi-id-box label {
+  font-size: 0.85rem;
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.upi-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#upiIdText {
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 1rem;
+}
+
+.upi-row button {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.upi-apps {
+  margin: 20px 0;
+}
+
+.upi-apps p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.upi-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.gpay { background: #4285F4; }
+.phonepe { background: #5f259f; }
+.paytm { background: #00baf2; }
+
+.payment-help {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .product-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
